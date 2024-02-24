@@ -20,7 +20,7 @@ export class BeerDetails {
                                                         <br><br>
                                                         Brewed: ${beer.firstBrewed}
                                                         <br>
-                                                        Alcohol: ${beer.abv}
+                                                        Alcohol: ${beer.abv} %
                                                         <br>
                                                         Bitterness: ${beer.ibu}
                                                         <p><b>Food pairing:</b></p>
