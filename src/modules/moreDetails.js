@@ -38,5 +38,3 @@ export class BeerDetails {
         beer.foodPairing.forEach(listItem => document.getElementById("list").innerHTML += `<li class="list-group-item border-success text-success">${listItem}</li>`);
     }
 }
-
-console.log("   Testing     empty    spaces");

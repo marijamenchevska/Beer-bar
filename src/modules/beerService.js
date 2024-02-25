@@ -90,7 +90,7 @@ export class BeerService {
             return;
         }
 
-        // It needs to be checked whether the search input is one or multiple words so that the URL ending is correctly completed 
+        // It needs to be checked whether the search input is one or multiple words so that the URL is correctly completed 
         if (userInput.split(" ").length === 1) userInput = userInput;
         else userInput = userInput.split(" ").join("_"); // or replace(" ", "_")
                     
@@ -167,6 +167,9 @@ export class BeerService {
             }
         });
 
-        this.searchBtn.addEventListener("click", async () => this.searchPageCreation(this.inputField.value));
+        this.searchBtn.addEventListener("click", async () => {
+            this.searchPageCreation(this.inputField.value);
+            this.inputField.value = "";
+        });
     }
 }
