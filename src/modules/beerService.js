@@ -124,6 +124,7 @@ export class BeerService {
         this.previousBtn.addEventListener("click", async () => {
             this.sortingSelection.selectedIndex = 0;
             await this.pageCreation(--this.pageCounter, this.itemsPerPage);
+            this.nextBtn.style.visibility = "visible";
             if(this.pageCounter === 1) this.previousBtn.style.visibility = "hidden";
         });
 
